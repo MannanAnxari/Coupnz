@@ -99,9 +99,11 @@ const coupon = ({ data }) => {
             else {
                 setError(null)
             }
+            setloading(false);
         }).catch(err => {
             toast.error('something went wrong!');
             setError('something went wrong!');
+            setloading(false);
         })
 
     }, [slug])

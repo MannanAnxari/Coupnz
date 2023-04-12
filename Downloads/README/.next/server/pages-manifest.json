@@ -1,0 +1,23 @@
+{
+  "/_app": "pages/_app.js",
+  "/Layout": "pages/Layout.html",
+  "/_document": "pages/_document.js",
+  "/Storedetail": "pages/Storedetail.html",
+  "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
+  "/all-stores": "pages/all-stores.html",
+  "/api/racecar": "pages/api/racecar.js",
+  "/country/[slug]": "pages/country/[slug].html",
+  "/contact": "pages/contact.html",
+  "/": "pages/index.html",
+  "/pages/[slug]": "pages/pages/[slug].html",
+  "/popular-coupons": "pages/popular-coupons.html",
+  "/coupon/[slug]": "pages/coupon/[slug].html",
+  "/trending-coupon": "pages/trending-coupon.html",
+  "/category/[slug]": "pages/category/[slug].html",
+  "/season/[slug]": "pages/season/[slug].html",
+  "/category": "pages/category.js",
+  "/store/[slug]/[couponid]": "pages/store/[slug]/[couponid].html",
+  "/store/[slug]": "pages/store/[slug].html",
+  "/404": "pages/404.html"
+}
