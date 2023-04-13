@@ -59,18 +59,19 @@ function handler(req, res) {
                 console.log("Data written to file");
             });
             return res.status(200).json({
-                msg: "Data written to file! \uD83D\uDE01"
+                success: true,
+                message: "Data written to file! \uD83D\uDE01"
             });
         }).catch((err)=>{
             res.status(500).json({
-                msg: "Internal Server Error! \uD83D\uDE11",
-                error: err.message
+                success: false,
+                message: err.message
             });
         });
     } catch (err) {
         res.status(500).json({
-            msg: "Internal Server Error! \uD83D\uDE11",
-            error: err.message
+            success: false,
+            message: err.message
         });
     }
 }
