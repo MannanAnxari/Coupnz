@@ -1,6 +1,6 @@
 import Couponcard from '@/components/Couponcard';
 import Spinner from '@/components/Spinner';
-import { APP_KEY, APP_URL } from '@/config';
+import { APP_KEY, APP_URL } from '@/public/settings/config';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 

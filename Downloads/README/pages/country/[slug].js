@@ -1,6 +1,6 @@
 import Categorycrad from '@/components/Categorycard'
 import Spinner from '@/components/Spinner'
-import { APP_KEY, APP_URL } from '@/config'
+import { APP_KEY, APP_URL } from '@/public/settings/config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'

@@ -1,4 +1,4 @@
-import { APP_KEY, APP_URL, FOOTER_ABOUT } from '@/config'
+import { APP_KEY, APP_URL, FOOTER_ABOUT } from '@/public/settings/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../public/assets/logo-white.png'

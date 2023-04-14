@@ -7,7 +7,7 @@ import Popular from '@/components/Popular'
 import Slider from '@/components/Slider'
 import Layout from './Layout'
 import Subscribe from '@/components/Subscribe'
-import { APP_KEY, APP_NAME, APP_URL } from '@/config'
+import { APP_KEY, APP_NAME, APP_URL } from '@/public/settings/config'
 import { useEffect, useState } from 'react'
 import Spinner from '@/components/Spinner'
 

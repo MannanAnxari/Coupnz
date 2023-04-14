@@ -11,8 +11,8 @@ exports.modules = {
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1838);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
@@ -99,7 +99,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -112,7 +112,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -125,7 +125,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                             class: `fab fa-telegram-plane text-${!coupon?.code ? "secondary" : "primary"}`,
@@ -219,7 +219,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         target: "_blank",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -232,7 +232,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         target: "_blank",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -245,7 +245,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                                 class: `fab fa-telegram-plane text-${!coupon?.code ? "secondary" : "primary"}`,
@@ -345,8 +345,8 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1838);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
@@ -433,7 +433,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -446,7 +446,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -459,7 +459,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "px-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                    href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                             class: `fab fa-telegram-plane text-${!coupon?.code ? "secondary" : "primary"}`,
@@ -553,7 +553,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         target: "_blank",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -566,7 +566,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         target: "_blank",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
@@ -579,7 +579,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     class: "px-3",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
+                                                        href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${coupon.title}/${coupon.id}`,
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                                 class: `fab fa-telegram-plane text-${!coupon?.code ? "secondary" : "primary"}`,

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '@/public/assets/logo-white.png'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { APP_KEY, APP_URL } from '@/config'
+import { APP_KEY, APP_URL } from '@/public/settings/config'
 
 const Header2 = ({ data, category, season, coupons, country }) => {
 
@@ -46,7 +46,7 @@ const Header2 = ({ data, category, season, coupons, country }) => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-secondary p-3">
+            <nav className="navbar navbar-expand-lg bg-header px-3 py-2">
                 <div className="container-fluid">
                     <Link className="navbar-brand col-md-2 col-4" href="/">
                         {/* <Image src={data?.url + "/" + data?.logo?.header || logo} alt="" className={'position-relative my-1 h-100'} fill={200} /> */}
@@ -59,7 +59,7 @@ const Header2 = ({ data, category, season, coupons, country }) => {
                             <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </button>
-                    <div className="collapse navbar-collapse w-75 mt-2 position-relative" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse w-75 mt-2 h2 position-relative" id="navbarSupportedContent">
                         {/* <form className="mx-auto mx-md-0 d-flex w-75 rounded-2" role="search">
                             <input className="form-control me-2 rounded-1 " type="search" placeholder="Search 5000+ Brands Coupons & Promo Codes" aria-label="Search" />
 

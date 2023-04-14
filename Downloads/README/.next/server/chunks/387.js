@@ -12,8 +12,8 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1838);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
@@ -47,14 +47,14 @@ const detail = ({ storedetailapi , store , img , data  })=>{
         e.preventDefault();
         setIsLoading(true);
         let email = e.target.elements["email"].value;
-        fetch(`${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}api/subscribe`, {
+        fetch(`${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}api/subscribe`, {
             headers: {
                 "Content-Type": "application/json"
             },
             method: "POST",
             body: JSON.stringify({
                 email,
-                key: _config__WEBPACK_IMPORTED_MODULE_1__.APP_KEY
+                key: _public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_KEY
             })
         }).then((res)=>res.json()).then((data)=>{
             if (data.success) {
@@ -220,6 +220,7 @@ const expire = ({ expire , img  })=>{
         "November",
         "December"
     ];
+    console.log(expire);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "my-2 h-100 px-3 py-2 coupon d-flex bg-white",
         children: [
@@ -251,7 +252,7 @@ const expire = ({ expire , img  })=>{
                             className: "x-small",
                             children: [
                                 "Expires: ",
-                                `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`,
+                                expire.expire_date.includes("0000") ? "Expire Soon..." : `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`,
                                 " "
                             ]
                         })
@@ -295,8 +296,8 @@ const expire = ({ expire , img  })=>{
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1838);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
@@ -391,7 +392,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3   ",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
@@ -411,7 +412,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3   ",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
@@ -431,7 +432,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
@@ -523,7 +524,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3   ",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `http://www.facebook.com/sharer.php?u=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `http://www.facebook.com/sharer.php?u=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
@@ -543,7 +544,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3   ",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://wa.me/?text=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `https://wa.me/?text=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
@@ -563,7 +564,7 @@ const modal = ({ img , data , popup , store  })=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 class: "p-3",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: `https://telegram.me/share/url?url=${_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
+                                                    href: `https://telegram.me/share/url?url=${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.APP_URL}/store/${popup.title}/${popup.id}`,
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
                                                             width: "40",

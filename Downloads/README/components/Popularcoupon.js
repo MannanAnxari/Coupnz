@@ -1,4 +1,4 @@
-import { APP_URL, APP_KEY } from '@/config'
+import { APP_URL, APP_KEY } from '@/public/settings/config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'

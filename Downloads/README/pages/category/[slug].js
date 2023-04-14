@@ -1,38 +1,10 @@
 import Categorycrad from '@/components/Categorycard'
 import Favoritebrands from '@/components/Favoritebrands'
 import Spinner from '@/components/Spinner'
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/config'
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import Layout from '../Layout'
-
-
-// export const getStaticPaths = async () => {
-//     const response = await fetch(`${APP_URL}api/category?key=${APP_KEY}`)
-//     const data = await response.json();
-//     const paths = data?.data?.map((item) => {
-//         return { params: { slug: item?.slug } }
-//     })
-
-//     return {
-//         paths,
-//         fallback: true
-//     }
-// }
-
-// export async function getStaticProps({ params }) {
-
-//     const { slug } = params;
-//     const response = await fetch(`${APP_URL}api/store?key=${APP_KEY}&category=${slug}`)
-//     const data = await response.json();
-
-//     return {
-//         props: { categ: data },
-//     };
-// }
-
-
 
 const category = ({ data, metas, setMetas }) => {
 
@@ -47,7 +19,7 @@ const category = ({ data, metas, setMetas }) => {
     useEffect(() => {
 
         setloading(true);
-        
+
         fetch(`${APP_URL}api/store?key=${APP_KEY}&category=${slug}`).then(res => res.json()).then(json => {
 
             setloading(false);

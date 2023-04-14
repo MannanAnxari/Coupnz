@@ -4,7 +4,7 @@ import Link from 'next/link'
 import StoreItem from './StoreItem'
 import React, { useEffect, useState } from 'react'
 // import Spinner from './Spinner'
-import { APP_URL, APP_KEY } from '@/config'
+import { APP_URL, APP_KEY } from '@/public/settings/config'
 import Spinner from './Spinner'
 
 

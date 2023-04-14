@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import country from '@/pages/country/[slug]'
-import { APP_KEY, APP_URL } from '@/config'
+import { APP_KEY, APP_URL } from '@/public/settings/config'
 
 const Header1 = ({ data, category, season, coupons, country }) => {
 

@@ -1,26 +1,15 @@
 import Spinner from '@/components/Spinner';
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/config';
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import Layout from '../Layout';
 
 
-
-
-export async function getStaticProps() {
-
-    const response = await fetch(`${APP_URL}api/category?key=${APP_KEY}`)
-    const data = await response.json();
-
-    return {
-        props: { categ: data },
-    };
-}
+ 
 
 
 
-
-const categories = ({ categ, data, metas, setMetas }) => {
+const categories = ({ data, metas, setMetas }) => {
 
     const [favcat, setfavcat] = useState({})
     const [err, setError] = useState(false);
@@ -31,13 +20,15 @@ const categories = ({ categ, data, metas, setMetas }) => {
 
         setMetas({ ...metas, title: `Category ${data?.siteTitle ? '- ' + data?.siteTitle : ''}` })
 
-        setloading(false);
-        if (categ) {
-            setfavcat(categ)
-        } else {
+
+        fetch(`${APP_URL}api/category?key=${APP_KEY}`).then(res => res.json()).then(json => {
+            setloading(false);
+            setfavcat(json)
+        }).catch(err => {
+            setloading(false);
+            setError(err.message)
             setfavcat({})
-            setError(true)
-        }
+        })
     }, [])
 
     if (loading) return <div className='bg-white vh-100 vw-100 d-flex justify-content-center overflow-hidden align-items-center position-fixed top-0 start-0 z-1'><Spinner /></div>

@@ -1,4 +1,4 @@
-import { APP_KEY, APP_URL } from '@/config'
+import { APP_KEY, APP_URL } from '@/public/settings/config'
 import React, { useState } from 'react'
 import { toast } from 'react-hot-toast'
 

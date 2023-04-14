@@ -4,7 +4,7 @@ import img1 from '../public/assets/slider/apparel-promozons-01.jpg'
 import img2 from '../public/assets/slider/Memoria-Day-Sale-morecouponcode.png'
 import memorialslider from '../public/assets/slider/Happy-Memorial Day-couponive.png'
 import Spinner from './Spinner'
-import { APP_URL, APP_KEY } from '@/config'
+import { APP_URL, APP_KEY } from '@/public/settings/config'
 
 
 const Slider = ({ data, sliderData }) => {

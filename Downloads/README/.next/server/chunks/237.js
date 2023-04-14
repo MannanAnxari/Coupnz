@@ -16,8 +16,8 @@ exports.modules = {
 /* harmony import */ var _StoreItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5850);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1838);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2053);
+/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Spinner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2670);
 // import Image from 'next/image'
 
@@ -79,8 +79,8 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 /* harmony default export */ const Happy_Memorial_Day_couponive = ({"src":"/_next/static/media/Happy-Memorial Day-couponive.ca83604d.png","height":98,"width":1164,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAYAAADjAO9DAAAAJ0lEQVR4nGP8/vrV/38sLAw//jMwMDIwMLAA2X/+/mXg+P+fgQmIAfI6DdNdD3i5AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":1});
 // EXTERNAL MODULE: ./components/Spinner.jsx
 var Spinner = __webpack_require__(2670);
-// EXTERNAL MODULE: ./config.js
-var config = __webpack_require__(1838);
+// EXTERNAL MODULE: ./public/settings/config.js
+var config = __webpack_require__(2053);
 ;// CONCATENATED MODULE: ./components/Slider.js
 
 

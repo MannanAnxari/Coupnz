@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Couponcard from './Couponcard';
-import { APP_URL, APP_KEY } from '@/config';
+import { APP_URL, APP_KEY } from '@/public/settings/config';
 import Spinner from './Spinner';
 const Couponslider = ({ styledata }) => {
 
