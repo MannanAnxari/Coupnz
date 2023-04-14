@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/D5aFzAOQcxE184JGBAgUL/_buildManifest.js",
-    "static/D5aFzAOQcxE184JGBAgUL/_ssgManifest.js"
+    "static/--yrT0lMfCfvTFkQHw00O/_buildManifest.js",
+    "static/--yrT0lMfCfvTFkQHw00O/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,7 +16,7 @@
       "static/chunks/main-6338eeb57ee6af9b.js",
       "static/chunks/955-ab8540c6926ecd05.js",
       "static/css/4df78f2cd73d6b26.css",
-      "static/chunks/pages/index-40edc8ad62c02d28.js"
+      "static/chunks/pages/index-e84c4cf7e6f2c204.js"
     ],
     "/Layout": [
       "static/chunks/webpack-59c5c889f52620d6.js",
@@ -96,7 +96,7 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/pages/popular-coupons-0f74ae856476b3c8.js"
+      "static/chunks/pages/popular-coupons-de520c35175ffc29.js"
     ],
     "/season/[slug]": [
       "static/chunks/webpack-59c5c889f52620d6.js",
@@ -125,7 +125,7 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/pages/trending-coupon-47347adf48f2954c.js"
+      "static/chunks/pages/trending-coupon-2aef04618c56e0f0.js"
     ]
   },
   "ampFirstPages": []

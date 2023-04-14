@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Couponcard = ({ data, item, img }) => {
- 
+
     return (
         <>
             {data.Style === 1 ?
@@ -45,11 +45,11 @@ const Couponcard = ({ data, item, img }) => {
                         <h6 class="card-text fw-bold">{item.offertime}</h6>
                     </div>
                     <div className="card-footer bg-transparent ">
-                        {item.type === 'showdeal' ?
-                            <Link href={`${item.url}`} className='button button-secondary w-100 rounded-1 px-1 py-2'>Show Deal</Link>
+                        {item.type === 'Coupon Code' ?
+                            <Link href={`${item.url}`} onClick={() => { window.open(`/store/${item.store_slug}/${item.id}`) }} className='button button-secondary w-100 rounded-1 px-1 py-2'>Show Deal</Link>
                             : <>
                                 <div class="btncard_link position-relative ">
-                                    <Link href={`${item.url}`} class="btn btn-sm  why w-100 show-code-2-btn position-relative bg-orange btn code-btn  text-white font-weight-bold">
+                                    <Link href={`${item.url}`} onClick={() => { window.open(`/store/${item.store_slug}/${item.id}`) }} class="btn btn-sm  why w-100 show-code-2-btn position-relative bg-orange btn code-btn  text-white font-weight-bold">
                                         <span>Show Code</span>
                                     </Link>
                                     <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center  my-auto">{item.code}</div>

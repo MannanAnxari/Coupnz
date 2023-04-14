@@ -113,8 +113,11 @@ const Couponcard = ({ data , item , img  })=>{
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "card-footer bg-transparent ",
-                    children: item.type === "showdeal" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
+                    children: item.type === "Coupon Code" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                         href: `${item.url}`,
+                        onClick: ()=>{
+                            window.open(`/store/${item.store_slug}/${item.id}`);
+                        },
                         className: "button button-secondary w-100 rounded-1 px-1 py-2",
                         children: "Show Deal"
                     }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -123,6 +126,9 @@ const Couponcard = ({ data , item , img  })=>{
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                                     href: `${item.url}`,
+                                    onClick: ()=>{
+                                        window.open(`/store/${item.store_slug}/${item.id}`);
+                                    },
                                     class: "btn btn-sm  why w-100 show-code-2-btn position-relative bg-orange btn code-btn  text-white font-weight-bold",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                         children: "Show Code"
