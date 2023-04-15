@@ -1,6 +1,6 @@
 import Spinner from '@/components/Spinner'
 import Categorycrad from '@/components/store/coupon'
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config'
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
@@ -9,36 +9,7 @@ import ReactPaginate from 'react-paginate';
 import Layout from '../Layout'
 import StoreCrad from "@/components/StoreCrad";
 import { toast } from 'react-hot-toast'
-
-
-// export const getStaticPaths = async () => {
-//     const response = await fetch(`${APP_URL}api/coupon_type?key=${APP_KEY}`)
-//     const data = await response.json();
-
-//     const paths = data?.map((item) => {
-//         return { params: { slug: item?.slug } }
-//     })
-
-//     return {
-//         paths,
-//         fallback: true
-//     }
-// }
-
-// export async function getStaticProps({ params }) {
-
-//     const { slug } = params;
-//     console.log(slug);
-//     const response = await fetch(`${APP_URL}api/coupon?key=${APP_KEY}&type=${slug}`)
-//     console.log(response);
-//     const data = await response.json();
-
-//     return {
-//         props: { coupon: data },
-//     };
-// }
-
-
+ 
 
 function PaginatedItems({ itemsPerPage, items, coupondropdown, data }) {
     const [itemOffset, setItemOffset] = useState(0);
@@ -60,7 +31,7 @@ function PaginatedItems({ itemsPerPage, items, coupondropdown, data }) {
                 {currentItems &&
                     currentItems.map((item) => {
                         return <div className="px-1 my-0 col-12">
-                            <StoreCrad coupon={item} is_ico={false} img={coupondropdown?.url + "/" + item?.store_logo} data={data} />
+                            <StoreCrad isSingle={true} coupon={item} is_ico={false} img={coupondropdown?.url + "/" + item?.store_logo} data={data} />
                         </div>
                     })}
             </div>

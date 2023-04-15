@@ -1,42 +1,11 @@
 import Spinner from '@/components/Spinner'
 import Categorycrad from '@/components/store/coupon'
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config'
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Layout from '../Layout'
 import StoreCrad from "@/components/StoreCrad";
-
-
-
-
-
-// export const getStaticPaths = async () => {
-//     const response = await fetch(`${APP_URL}api/season?key=${APP_KEY}&paginate=10`)
-//     const data = await response.json();
-//     const paths = data?.data?.map((item) => {
-//         return { params: { slug: item?.slug } }
-//     })
-
-//     return {
-//         paths,
-//         fallback: true
-//     }
-// }
-
-// export async function getStaticProps({ params }) {
-
-//     const { slug } = params;
-
-//     const response = await fetch(`${APP_URL}api/coupon?key=${APP_KEY}&season=${slug}`)
-//     const data = await response.json();
-
-//     return {
-//         props: { season: data },
-//     };
-// }
-
-
 
 
 const Seasonpage = ({ data, setMetas, metas }) => {
@@ -84,7 +53,7 @@ const Seasonpage = ({ data, setMetas, metas }) => {
 
                         {seasondropdown?.data?.map((item) => {
                             return <div className="px-1 my-0 ">
-                                <StoreCrad coupon={item} styledata={data} img={seasondropdown?.url + "/" + item.store_logo} data={data} />
+                                <StoreCrad coupon={item} styledata={data} isSingle={true} img={seasondropdown?.url + "/" + item.store_logo} data={data} />
                             </div>
                         })}
                     </div>

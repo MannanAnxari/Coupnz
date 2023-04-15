@@ -7,7 +7,7 @@ import Popular from '@/components/Popular'
 import Slider from '@/components/Slider'
 import Layout from './Layout'
 import Subscribe from '@/components/Subscribe'
-import { APP_KEY, APP_NAME, APP_URL } from '@/public/settings/config'
+import { APP_KEY, APP_NAME, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import { useEffect, useState } from 'react'
 import Spinner from '@/components/Spinner'
 
@@ -20,7 +20,7 @@ export default function Home({ data, setMetas, metas }) {
 
     setMetas({ title: data?.siteTitle ? data?.siteTitle : "Home", metaTitle: data?.siteTitle ? data?.siteTitle : "", metaDescription: `${data?.meta ? data?.meta?.description : ""}`, metaKeyword: `${data?.meta ? data?.meta?.keywords : "More Coupon Codes"}` })
 
-    fetch(`${APP_URL}api/home?key=${APP_KEY}&store_paginate=25&coupon_paginate=25`).then(res => res.json()).then((dta) => {
+    fetch(`${APP_URL}api/home?key=${APP_KEY}`).then(res => res.json()).then((dta) => {
 
       setloading(false);
 
@@ -39,8 +39,7 @@ export default function Home({ data, setMetas, metas }) {
 
   }, []);
 
-
-  console.log({ homeData });
+ 
 
   if (loading) return (
     <Layout title={`${data?.siteTitle ? data?.siteTitle : "Home"}`}

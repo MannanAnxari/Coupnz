@@ -1,5 +1,5 @@
 import Spinner from '@/components/Spinner';
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config';
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/there_is_nothing_holding_me_back/config';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import Layout from '../Layout';

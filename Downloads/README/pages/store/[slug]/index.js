@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Sidepanel from '@/components/store/sidepanel'
 import Detail from '@/components/store/detail'
-import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/config'
+import { APP_KEY, APP_URL, DEFAULT_DESC, DEFAULT_TITLE } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Spinner from '@/components/Spinner'
 import Layout from '../../Layout';
 import Favoritebrands from '@/components/Favoritebrands';
@@ -68,8 +68,7 @@ export default function Storedetail({ data, setMetas, metas }) {
 
 
     }, [slug]);
-
-    console.log(singlestore);
+ 
 
     if (loading) return <div className='bg-white vh-100 vw-100 d-flex justify-content-center overflow-hidden align-items-center position-fixed top-0 start-0 z-1'><Spinner /></div>
 

@@ -145,8 +145,8 @@ const Footer1 = ({ data  })=>{
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2681);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
@@ -184,7 +184,7 @@ const Footer2 = ({ season , country , data  })=>{
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-white",
-                                    children: _public_settings_config__WEBPACK_IMPORTED_MODULE_1__.FOOTER_ABOUT
+                                    children: _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.FOOTER_ABOUT
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                                     className: "footer-link footer2-icon  p-0 text-white pt-1 d-flex",
@@ -337,8 +337,8 @@ const Footer2 = ({ season , country , data  })=>{
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1853);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _pages_country_slug___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2988);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2053);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2681);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -371,7 +371,7 @@ const Header1 = ({ data , category , season , coupons , country  })=>{
         if (e.length > 1) {
             setIsActive(true);
             setIsLoading(true);
-            fetch(`${_public_settings_config__WEBPACK_IMPORTED_MODULE_7__.APP_URL}api/store?key=${_public_settings_config__WEBPACK_IMPORTED_MODULE_7__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
+            fetch(`${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__.APP_URL}api/store?key=${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
                 let query = [];
                 results?.data?.map((item)=>query.push({
                         name: item.name,
@@ -614,8 +614,8 @@ const Header1 = ({ data , category , season , coupons , country  })=>{
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2053);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2681);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -633,7 +633,7 @@ const Header2 = ({ data , category , season , coupons , country  })=>{
         if (e.length > 1) {
             setIsActive(true);
             setIsLoading(true);
-            fetch(`${_public_settings_config__WEBPACK_IMPORTED_MODULE_5__.APP_URL}api/store?key=${_public_settings_config__WEBPACK_IMPORTED_MODULE_5__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
+            fetch(`${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__.APP_URL}api/store?key=${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
                 let query = [];
                 results?.data?.map((item)=>query.push({
                         name: item.name,
@@ -869,8 +869,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(2053);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(2681);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _components_Spinner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2670);
 /* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(6201);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_15__]);
@@ -958,7 +958,7 @@ function App({ Component , pageProps  }) {
                         data?.footer?.color || "white"
                     ]
                 ]
-            ]) + " " + `_element ${_public_settings_config__WEBPACK_IMPORTED_MODULE_13__.CONTAINER_TYPE === "wide" ? "wide" : "none-wide"}`,
+            ]) + " " + `_element ${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_13__.CONTAINER_TYPE === "wide" ? "wide" : "none-wide"}`,
             children: [
                 react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
                     id: "877b7e191979dc3f",
@@ -1282,7 +1282,7 @@ module.exports = import("react-hot-toast");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,459,664,443,675,298,152,196,321,850,498,237,988], () => (__webpack_exec__(8510)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,459,664,443,675,298,152,746,321,850,498,237,988], () => (__webpack_exec__(8510)));
 module.exports = __webpack_exports__;
 
 })();

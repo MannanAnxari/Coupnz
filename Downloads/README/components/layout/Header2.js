@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '@/public/assets/logo-white.png'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { APP_KEY, APP_URL } from '@/public/settings/config'
+import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 
 const Header2 = ({ data, category, season, coupons, country }) => {
 

@@ -1,4 +1,4 @@
-import { APP_URL, APP_KEY } from '@/public/settings/config'
+import { APP_URL, APP_KEY } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -57,10 +57,7 @@ const Couponcard = ({ data, item, img }) => {
                             </>
                         }
                     </div>
-                </div>
-
-
-
+                </div> 
             }
         </>
 

@@ -23,8 +23,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ handler)
 });
 
-// EXTERNAL MODULE: ./public/settings/config.js
-var config = __webpack_require__(357);
+// EXTERNAL MODULE: ./public/settings/there_is_nothing_holding_me_back/config.js
+var config = __webpack_require__(7397);
 ;// CONCATENATED MODULE: external "path"
 const external_path_namespaceObject = require("path");
 var external_path_default = /*#__PURE__*/__webpack_require__.n(external_path_namespaceObject);
@@ -63,7 +63,7 @@ function handler(req, res) {
 
 /***/ }),
 
-/***/ 357:
+/***/ 7397:
 /***/ ((module) => {
 
 

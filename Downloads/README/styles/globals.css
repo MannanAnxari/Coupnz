@@ -641,13 +641,26 @@ main[store-style="2"] .dropdown-item-hov:hover {
   position: relative;
   width: 90%;
 }
+[store-style="2"] .bg-code{
+  min-width: 200px;
+}
 
+[store-style="2"] :is(.code-btn,.bg-code){
+border-color: var(--primary);
+height: 44px;
+
+}
 @media (max-width:620px) {
   .theme-2-card {
     padding: 8px !important;
     padding-bottom: 0px !important;
   }
-
+  [store-style="2"] .coupon a.h3{
+  font-size: 14px;
+}
+[store-style="2"] .coupon .my-auto.px-2.px-md-4.col-8{
+  margin-block: 0px!important;
+}
   .theme-2-card .button-secondary {
 
     font-size: 11px !important;

@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 196;
-exports.ids = [196];
+exports.id = 746;
+exports.ids = [746];
 exports.modules = {
 
 /***/ 2670:
@@ -33,7 +33,7 @@ const Spinner = ()=>{
 
 /***/ }),
 
-/***/ 2053:
+/***/ 2681:
 /***/ ((module) => {
 
 

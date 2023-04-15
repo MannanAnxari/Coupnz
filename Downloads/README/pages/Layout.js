@@ -1,4 +1,4 @@
-import { APP_KEY, APP_URL, DEFAULT_TITLE, DEFAULT_DESC } from "@/public/settings/config";
+import { APP_KEY, APP_URL, DEFAULT_TITLE, DEFAULT_DESC } from "@/public/settings/there_is_nothing_holding_me_back/config";
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from "react";

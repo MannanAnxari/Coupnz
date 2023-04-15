@@ -1,4 +1,4 @@
-import { APP_URL } from '@/public/settings/config'
+import { APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -7,7 +7,7 @@ import React from 'react'
 const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
     const slug = useRouter();
 
-    var date = new Date(coupon.updated_at);
+    var date = new Date(coupon.update_date);
     var edate = new Date(coupon.expire_date);
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -76,13 +76,13 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
                 </div>
                 :
                 <div className={`bg-white my-2 h-100 p-3 coupon ${isSingle && 'theme-2-card'}`}>
-                    <div className="d-flex">
+                    <div className="row">
                         <div className={`${isSingle ? 'col-md-2 col-3' : 'col-2'} my-auto`}>
 
                             <Image src={img} fill={true} className='h-85-px object-fit-contain position-relative' />
 
                         </div>
-                        <div className={`my-auto px-2 px-md-4 ${isSingle ? 'col-sm-8 col-9 mt-0' : 'col-8'}`}>
+                        <div className={`my-auto px-2 px-md-4 ${isSingle ? 'col-sm-7 col-9 mt-0' : 'col-8'}`}>
                             <Link href="#" className={`h3 text-black`}>{coupon?.title}</Link>
                             <p className={`tr-2 d-md-block lh-1 ${!isSingle && 'd-none'} fs-6`} dangerouslySetInnerHTML={{ __html: coupon.description }}></p>
                             {coupon.featured === 'on' ? <p class="expiredate m-0   text-primary"><i class="fas fa-star  text-primary" aria-hidden="true"></i> New Coupon</p> : ''}
@@ -117,7 +117,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
 
                         </div>
                         {coupon?.code ?
-                            <div className={`${isSingle ? 'col-sm-2 col-12' : 'card-footer bg-transparent col-2'}`}>
+                            <div className={`${isSingle ? 'col-sm-3 col-12' : 'card-footer bg-transparent col-3'}`}>
 
                                 <div class="btncard_link position-relative ">
                                     <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${coupon.store_slug}/${coupon?.id}`) }} class="btn btn-sm  why w-100 show-code-2-btn position-relative btn code-btn bg-orange    text-white font-weight-bold">
@@ -125,10 +125,12 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
                                     </Link>
                                     <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center  my-auto">{coupon.code}</div>
                                 </div>
+                                <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
+
                             </div>
                             :
 
-                            <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-2 col-12' : 'col-2'}`}>
+                            <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
 
                                 <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${coupon.store_slug}/${coupon?.id}`) }} className={`p-2 d-md-block d-none button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                                     Show Deal
@@ -136,19 +138,17 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
                                 <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${coupon.store_slug}/${coupon?.id}`) }} className={`p-2  d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                                     {!coupon?.code ? '>' : '>'}
                                 </Link>
-                                <p className='d-md-block d-none x-small text-center'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
+                                <p className='d-md-block d-none x-small text-center pt-3'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
                             </div>
                         }
                     </div>
-                    <div className='border-top w-100 d-flex justify-content-between'>
+                    <div className='border-top w-100 d-flex justify-content-between py-2'>
                         <div className='col-6 text-center ms-2 my-auto'>
-                            <p className='x-small mb-0 expiredate'>Expires
-
-                                {coupon.expire_date ?
-                                    `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`
-                                    :
-                                    ' Expire Soon'
-                                }
+                            <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
+                                ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`
+                                :
+                                ' Expire Soon '
+                            }
 
                             </p>
                         </div>

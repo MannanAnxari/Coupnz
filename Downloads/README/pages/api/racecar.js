@@ -1,4 +1,4 @@
-import { APP_KEY, APP_URL } from '@/public/settings/config';
+import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_back/config';
 var fs = require('fs')
 import path from 'path';
 

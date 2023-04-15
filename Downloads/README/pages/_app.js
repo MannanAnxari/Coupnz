@@ -9,7 +9,7 @@ import Footer1 from '@/components/layout/Footer1'
 import Footer2 from '@/components/layout/Footer2'
 import dynamic from 'next/dynamic'
 import React, { useEffect, useState } from 'react'
-import { APP_URL, APP_KEY, CONTAINER_TYPE } from '@/public/settings/config'
+import { APP_URL, APP_KEY, CONTAINER_TYPE } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Spinner from '@/components/Spinner'
 import { toast } from 'react-hot-toast'
 

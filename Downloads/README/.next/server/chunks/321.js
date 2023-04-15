@@ -12,8 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2053);
-/* harmony import */ var _public_settings_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2681);
+/* harmony import */ var _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(968);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4298);
@@ -26,11 +26,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Layout = ({ children , title ={
-    DEFAULT_TITLE: _public_settings_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE
+    DEFAULT_TITLE: _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE
 } , metaTitle ={
-    DEFAULT_TITLE: _public_settings_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE
+    DEFAULT_TITLE: _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE
 } , metaKeywords ="" , metaDescription ={
-    DEFAULT_DESC: _public_settings_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_DESC
+    DEFAULT_DESC: _public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_DESC
 }  })=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>{
@@ -89,7 +89,7 @@ const Layout = ({ children , title ={
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:site_name",
-                        conten: `${_public_settings_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE}`
+                        conten: `${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_TITLE}`
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",

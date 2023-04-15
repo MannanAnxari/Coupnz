@@ -4,13 +4,12 @@ import React from 'react'
 
 const expire = ({ expire, img }) => {
 
-    var date = new Date(expire.updated_at);
+    var date = new Date(expire.update_date);
     var edate = new Date(expire.expire_date);
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
-
-    console.log(expire);
+ 
     return (
         <div className="my-2 h-100 px-3 py-2 coupon d-flex bg-white">
             <div className="col-md-2 my-auto">

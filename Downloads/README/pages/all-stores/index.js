@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import StoreItem from '@/components/StoreItem'
 import Pagination from '@/components/layout/Pagnation'
-import { APP_URL, APP_KEY } from '@/public/settings/config'
+import { APP_URL, APP_KEY } from '@/public/settings/there_is_nothing_holding_me_back/config'
 import Spinner from '@/components/Spinner'
 
 const index = ({ data, setMetas, metas }) => {
