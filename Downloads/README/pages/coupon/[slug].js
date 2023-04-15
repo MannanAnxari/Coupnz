@@ -31,7 +31,7 @@ function PaginatedItems({ itemsPerPage, items, coupondropdown, data }) {
                 {currentItems &&
                     currentItems.map((item) => {
                         return <div className="px-1 my-0 col-12">
-                            <StoreCrad isSingle={true} coupon={item} is_ico={false} img={coupondropdown?.url + "/" + item?.store_logo} data={data} />
+                            <StoreCrad padd={true} isSingle={true} coupon={item} is_ico={false} img={coupondropdown?.url + "/" + item?.store_logo} data={data} />
                         </div>
                     })}
             </div>

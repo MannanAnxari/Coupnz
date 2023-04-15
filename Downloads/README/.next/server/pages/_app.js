@@ -158,6 +158,7 @@ const Footer1 = ({ data  })=>{
 
 
 const Footer2 = ({ season , country , data  })=>{
+    console.log(_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_1__.FOOTER_ABOUT);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
             className: "bg-secondary",

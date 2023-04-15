@@ -27,7 +27,7 @@ exports.modules = {
 
 
 
-const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
+const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>{
     const slug = (0,next_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
     var date = new Date(coupon.update_date);
     var edate = new Date(coupon.expire_date);
@@ -323,7 +323,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                     ]
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "border-top w-100 d-flex justify-content-between py-2",
+                    className: `border-top w-100 d-flex justify-content-between ${padd ? "pt-3" : "py-2"}`,
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "col-6 text-center ms-2 my-auto",
@@ -371,7 +371,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
 
 
 
-const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
+const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>{
     const slug = (0,next_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
     var date = new Date(coupon.update_date);
     var edate = new Date(coupon.expire_date);
@@ -667,7 +667,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle  })=>{
                     ]
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "border-top w-100 d-flex justify-content-between py-2",
+                    className: `border-top w-100 d-flex justify-content-between ${padd ? "pt-3" : "py-2"}`,
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "col-6 text-center ms-2 my-auto",

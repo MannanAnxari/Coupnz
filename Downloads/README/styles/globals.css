@@ -641,14 +641,22 @@ main[store-style="2"] .dropdown-item-hov:hover {
   position: relative;
   width: 90%;
 }
+[store-style="2"] 
+.bg-orange::before
+{
+  height: 42px;
+}
 [store-style="2"] .bg-code{
   min-width: 200px;
 }
 
 [store-style="2"] :is(.code-btn,.bg-code){
 border-color: var(--primary);
-height: 44px;
-
+height: 43px;
+}
+[store-style="2"] .show-code-2-btn {
+border-color: transparent!important;
+height: 43px;
 }
 @media (max-width:620px) {
   .theme-2-card {

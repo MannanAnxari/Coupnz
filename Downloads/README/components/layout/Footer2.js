@@ -4,7 +4,7 @@ import Link from 'next/link'
 import logo from '../../public/assets/logo-white.png'
 
 const Footer2 = ({ season, country, data }) => {
-
+console.log(FOOTER_ABOUT);
     return (
         <>
             <div className="bg-secondary">
@@ -15,7 +15,6 @@ const Footer2 = ({ season, country, data }) => {
                                 <Image src={data?.url + "/" + data?.logo?.header || logo} alt="" className={'position-relative my-1 header-logo w-100'} style={{ objectFit: 'contain' }} fill={true}></Image>
                             </Link>
                             <p className='text-white'>{FOOTER_ABOUT}</p>
-
                             <ul className='footer-link footer2-icon  p-0 text-white pt-1 d-flex'>
                                 <li><Link href=""> <i className='fab fa-facebook-f'></i></Link></li>
                                 <li><Link href=""> <i className='fab fa-pinterest-p'></i></Link></li>

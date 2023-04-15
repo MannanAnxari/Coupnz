@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
+const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
     const slug = useRouter();
 
     var date = new Date(coupon.update_date);
@@ -142,7 +142,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle }) => {
                             </div>
                         }
                     </div>
-                    <div className='border-top w-100 d-flex justify-content-between py-2'>
+                    <div className={`border-top w-100 d-flex justify-content-between ${padd ? 'pt-3' : 'py-2'}`}>
                         <div className='col-6 text-center ms-2 my-auto'>
                             <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
                                 ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`

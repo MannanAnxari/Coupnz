@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/yGn59-t3t2mofbwH87H-Y/_buildManifest.js",
-    "static/yGn59-t3t2mofbwH87H-Y/_ssgManifest.js"
+    "static/HYuTuxsuQ0n3j6UtRasMd/_buildManifest.js",
+    "static/HYuTuxsuQ0n3j6UtRasMd/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -34,8 +34,8 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/css/cc571c9852099beb.css",
-      "static/chunks/pages/_app-eaed9c126d9356c9.js"
+      "static/css/f1b0b2d946e9cc71.css",
+      "static/chunks/pages/_app-1f25383726a536ca.js"
     ],
     "/_error": [
       "static/chunks/webpack-59c5c889f52620d6.js",
@@ -83,8 +83,8 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/836-361f5798754de718.js",
-      "static/chunks/pages/coupon/[slug]-176e915ebcb809e4.js"
+      "static/chunks/836-a9ea84f7ce4bd7c8.js",
+      "static/chunks/pages/coupon/[slug]-2d4af46d4fb4ad17.js"
     ],
     "/pages/[slug]": [
       "static/chunks/webpack-59c5c889f52620d6.js",
@@ -102,14 +102,14 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/836-361f5798754de718.js",
-      "static/chunks/pages/season/[slug]-f973a7ddf298d6bb.js"
+      "static/chunks/836-a9ea84f7ce4bd7c8.js",
+      "static/chunks/pages/season/[slug]-02f39d30eee1e092.js"
     ],
     "/store/[slug]": [
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/836-361f5798754de718.js",
+      "static/chunks/836-a9ea84f7ce4bd7c8.js",
       "static/chunks/954-3fc1ef2337f69cdb.js",
       "static/chunks/pages/store/[slug]-7ac8389771c1a930.js"
     ],
@@ -117,7 +117,7 @@
       "static/chunks/webpack-59c5c889f52620d6.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-6338eeb57ee6af9b.js",
-      "static/chunks/836-361f5798754de718.js",
+      "static/chunks/836-a9ea84f7ce4bd7c8.js",
       "static/chunks/954-3fc1ef2337f69cdb.js",
       "static/chunks/pages/store/[slug]/[couponid]-e7eeddc057276e31.js"
     ],

@@ -53,7 +53,7 @@ const Seasonpage = ({ data, setMetas, metas }) => {
 
                         {seasondropdown?.data?.map((item) => {
                             return <div className="px-1 my-0 ">
-                                <StoreCrad coupon={item} styledata={data} isSingle={true} img={seasondropdown?.url + "/" + item.store_logo} data={data} />
+                                <StoreCrad padd={true} coupon={item} styledata={data} isSingle={true} img={seasondropdown?.url + "/" + item.store_logo} data={data} />
                             </div>
                         })}
                     </div>
