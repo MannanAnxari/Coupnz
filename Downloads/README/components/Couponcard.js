@@ -30,10 +30,7 @@ const Couponcard = ({ data, item, img }) => {
                 </div>
 
                 :
-
-                // <h2 className='head1 pt-5 '>Today's Most Popular Deals</h2>
-
-                // ${item.type === 'topdeal' ? 'top-deal' : ''}
+ 
                 <div class={`card position-relative border-0 h-100  `}>
                     <div className="img-overlay  ">
                         <Image src={`${!img ? '' : img + "/" + item?.store_logo}`} alt={item.store_name} fill={true} className='w-100 position-relative p-4'></Image>

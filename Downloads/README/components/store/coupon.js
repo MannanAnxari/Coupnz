@@ -35,7 +35,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                 {coupon.expire_date ?
                                     ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`
                                     :
-                                    ' Expire Soon'
+                                    ' Expire Soon...'
                                 }
 
                             </p>
@@ -73,7 +73,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                         <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`p-2 fw-bold d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                             {!coupon?.code ? '>' : '>'}
                         </Link>
-                        <p className='d-md-block d-none x-small text-center'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
+                        <p className='d-md-block d-none x-small text-center'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'}</p>
                     </div>
                 </div >
                 :
@@ -127,7 +127,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                     </Link>
                                     <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center my-auto">{coupon.code}</div>
                                 </div>
-                                <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
+                                <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
                             </div>
                             :
                             <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
@@ -137,9 +137,9 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                     Show Deal
                                 </Link>
                                 <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`p-2  d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
-                                    {!coupon?.code ? '>' : '>'}
+                                    {!coupon?.code ? 'Show Deal' : 'Show Deal'}
                                 </Link>
-                                <p className='d-md-block d-none x-small text-center pt-3'>Update: {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`} </p>
+                                <p className='d-md-block d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
                             </div>
                         }
                     </div>
@@ -148,7 +148,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                             <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
                                 `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`
                                 :
-                                ' Expire Soon'
+                                ' Expire Soon...'
                             }
 
                             </p>

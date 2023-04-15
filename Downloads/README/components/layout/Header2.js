@@ -7,40 +7,31 @@ import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_
 
 const Header2 = ({ data, category, season, coupons, country }) => {
 
-    const [err, setError] = useState(false);
-
-
-
-
     const [searchQuery, setSearchQuery] = useState([]);
     const [isActive, setIsActive] = useState(false);
-    const [query, setQuery] = useState(false);
+    const [query, setQuery] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSearch = (e) => {
 
         setQuery(e);
 
-        if (e.length > 1) {
+        if (query.length >= 1) {
 
             setIsActive(true);
             setIsLoading(true);
             fetch(`${APP_URL}api/store?key=${APP_KEY}&search=${e}`).then(res => res.json()).then(results => {
-
                 let query = [];
-
                 results?.data?.map(item => query.push({ name: item.name, slug: item.slug }))
 
                 setIsLoading(false);
-
-                setSearchQuery(query)
-
+                setSearchQuery(query);
             })
         }
         else {
             setIsLoading(false);
             setIsActive(false);
-            setSearchQuery([])
+            setSearchQuery([]);
         }
     }
 
@@ -65,7 +56,7 @@ const Header2 = ({ data, category, season, coupons, country }) => {
 
                         </form> */}
                         <form className="mx-auto mx-md-0 d-flex w-75 rounded-2" role="search">
-                            <input className="form-control  rounded-1" type="search" placeholder="Search 5000+ Brands Coupons & Promo Codes" aria-label="Search" onChange={(e) => handleSearch(e.target.value)} />
+                            <input className="form-control rounded-1" type="search" placeholder="Search 5000+ Brands Coupons & Promo Codes" aria-label="Search" onChange={(e) => handleSearch(e.target.value)} value={query} />
                             <div class="w-75 top-100 pl-0 z-2 position-absolute header-search z-2">
                                 {
                                     isActive &&
@@ -78,7 +69,11 @@ const Header2 = ({ data, category, season, coupons, country }) => {
 
                                         searchQuery.length ?
                                             searchQuery.map(item => {
-                                                return <div class="list-group" ><Link href={`/store/${item.slug}`} class="list-group-item list-group-item-action rounded-0">{item.name}</Link></div>
+                                                return <div class="list-group" onClick={() => {
+                                                    setQuery(''); setIsLoading(false);
+                                                    setIsActive(false);
+                                                    setSearchQuery([]);
+                                                }}><Link href={`/store/${item.slug}`} class="list-group-item list-group-item-action rounded-0">{item.name}</Link></div>
                                             })
 
                                             :

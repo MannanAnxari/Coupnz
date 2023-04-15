@@ -220,6 +220,7 @@ const expire = ({ expire , img  })=>{
         "November",
         "December"
     ];
+    console.log(expire);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "my-2 h-100 px-3 py-2 coupon d-flex bg-white",
         children: [
@@ -251,7 +252,7 @@ const expire = ({ expire , img  })=>{
                             className: "x-small",
                             children: [
                                 "Expires: ",
-                                expire.expire_date.includes("0000") ? "Expire Soon..." : `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`,
+                                expire.expire_date === null ? "Expire Soon..." : expire?.expire_date.includes("0000") ? "Expire Soon..." : `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`,
                                 " "
                             ]
                         })

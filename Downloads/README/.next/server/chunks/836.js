@@ -88,7 +88,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                     className: "x-small mb-0 expiredate",
                                     children: [
                                         "Expires",
-                                        coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon"
+                                        coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : "Expire Soon..."
                                     ]
                                 }),
                                 !is_ico && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -164,7 +164,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                             className: "d-md-block d-none x-small text-center",
                             children: [
                                 "Update: ",
-                                `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
+                                coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon...",
                                 " "
                             ]
                         })
@@ -286,7 +286,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                     className: "d-md-block fw-bold d-none x-small text-center pt-3",
                                     children: [
                                         "Update: ",
-                                        `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
+                                        coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon...",
                                         " "
                                     ]
                                 })
@@ -308,13 +308,13 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                         window.open(`/store/${coupon.store_slug}/${coupon?.id}`);
                                     },
                                     className: `p-2  d-md-none d-block button button-${!coupon?.code ? "secondary" : "primary"}`,
-                                    children: !coupon?.code ? ">" : ">"
+                                    children: !coupon?.code ? "Show Deal" : "Show Deal"
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                     className: "d-md-block d-none x-small text-center pt-3",
                                     children: [
                                         "Update: ",
-                                        `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
+                                        coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon...",
                                         " "
                                     ]
                                 })
@@ -331,7 +331,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                 className: "x-small mb-0 expiredate",
                                 children: [
                                     "Expires:  ",
-                                    coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon "
+                                    coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : "Expire Soon..."
                                 ]
                             })
                         }),
@@ -432,7 +432,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                     className: "x-small mb-0 expiredate",
                                     children: [
                                         "Expires:",
-                                        coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon"
+                                        coupon.expire_date ? ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon..."
                                     ]
                                 }),
                                 !is_ico && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -508,8 +508,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                             className: "d-md-block d-none x-small text-center",
                             children: [
                                 "Update: ",
-                                `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
-                                " "
+                                coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon..."
                             ]
                         })
                     ]
@@ -630,7 +629,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                     className: "d-md-block fw-bold d-none x-small text-center pt-3",
                                     children: [
                                         "Update: ",
-                                        `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
+                                        coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon...",
                                         " "
                                     ]
                                 })
@@ -652,13 +651,13 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                         window.open(`/store/${slug?.query?.slug}/${coupon?.id}`);
                                     },
                                     className: `p-2  d-md-none d-block button button-${!coupon?.code ? "secondary" : "primary"}`,
-                                    children: !coupon?.code ? ">" : ">"
+                                    children: !coupon?.code ? "Show Deal" : "Show Deal"
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                     className: "d-md-block d-none x-small text-center pt-3",
                                     children: [
                                         "Update: ",
-                                        `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`,
+                                        coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : "Expire soon...",
                                         " "
                                     ]
                                 })
@@ -675,7 +674,7 @@ const horizentalcoupon = ({ data , coupon , is_ico , img , isSingle , padd  })=>
                                 className: "x-small mb-0 expiredate",
                                 children: [
                                     "Expires:  ",
-                                    coupon.expire_date ? `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon"
+                                    coupon.expire_date ? `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}` : " Expire Soon..."
                                 ]
                             })
                         }),

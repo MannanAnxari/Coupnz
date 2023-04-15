@@ -8,36 +8,16 @@ import { APP_KEY, APP_URL } from '@/public/settings/there_is_nothing_holding_me_
 
 const Header1 = ({ data, category, season, coupons, country }) => {
 
-
-    const [err, setError] = useState(false);
-
-
-    // const category = [
-    //     'Apparel and Accessories', 'Arts and Entertainment ', 'Business'
-    // ]
-    // const coupons = [
-    //     'Coupon Code ', 'Free Gift', 'Discount'
-    // ]
-    // const season = [
-    //     'Back to school ', 'Cyber Monday', 'Discount'
-    // ]
-    // const country = [
-    //     'United State ', 'United Kingdom', 'Canada'
-    // ]
-    // console.log(data); 
-
-
-
     const [searchQuery, setSearchQuery] = useState([]);
     const [isActive, setIsActive] = useState(false);
-    const [query, setQuery] = useState(false);
+    const [query, setQuery] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSearch = (e) => {
 
         setQuery(e);
 
-        if (e.length > 1) {
+        if (query.length >= 1) {
 
             setIsActive(true);
             setIsLoading(true);
@@ -149,7 +129,11 @@ const Header1 = ({ data, category, season, coupons, country }) => {
 
                                         searchQuery.length ?
                                             searchQuery.map(item => {
-                                                return <div class="list-group" ><Link href={`/store/${item.slug}`} class="list-group-item list-group-item-action rounded-0 ">{item.name}</Link></div>
+                                                return <div class="list-group" onClick={() => {
+                                                    setQuery(''); setIsLoading(false);
+                                                    setIsActive(false);
+                                                    setSearchQuery([]);
+                                                }}><Link   href={`/store/${item.slug}`} class="list-group-item list-group-item-action rounded-0 ">{item.name}</Link></div>
                                             })
 
                                             :

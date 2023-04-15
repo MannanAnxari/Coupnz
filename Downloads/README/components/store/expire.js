@@ -9,7 +9,8 @@ const expire = ({ expire, img }) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
- 
+
+    console.log(expire);
     return (
         <div className="my-2 h-100 px-3 py-2 coupon d-flex bg-white">
             <div className="col-md-2 my-auto">
@@ -20,7 +21,7 @@ const expire = ({ expire, img }) => {
                 <p className='tr-2 my-1 d-md-block d-none fs-px' dangerouslySetInnerHTML={{ __html: expire.description }}></p>
 
                 <div className='d-md-flex justify-content-between mb-0'>
-                    <p className='x-small'>Expires: {expire.expire_date.includes('0000') ? 'Expire Soon...' : `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`} </p>
+                    <p className='x-small'>Expires: {expire.expire_date === null ? 'Expire Soon...' : expire?.expire_date.includes('0000') ? 'Expire Soon...' : `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`} </p>
                 </div>
             </div>
             <div className="col-2 text-end m-auto my-auto">

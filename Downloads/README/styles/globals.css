@@ -507,8 +507,8 @@ main[store-style="1"] .button {
   color: white;
 }
 
-.h2#navbarSupportedContent{
-  margin: 0px!important;
+.h2#navbarSupportedContent {
+  margin: 0px !important;
 }
 
 main[store-style="2"] .dropdown-item-hov:focus,
@@ -641,34 +641,43 @@ main[store-style="2"] .dropdown-item-hov:hover {
   position: relative;
   width: 90%;
 }
-[store-style="2"] 
-.bg-orange::before
-{
+
+[store-style="2"] .bg-orange::before {
   height: 42px;
 }
-[store-style="2"] .bg-code{
+
+[store-style="2"] .bg-code {
   min-width: 200px;
 }
 
-[store-style="2"] :is(.code-btn,.bg-code){
-border-color: var(--primary);
-height: 43px;
+[store-style="2"] :is(.code-btn, .bg-code) {
+  border-color: var(--primary);
+  height: 43px;
 }
+
+div.list-group>a {
+  font-size: 16px !important;
+}
+
 [store-style="2"] .show-code-2-btn {
-border-color: transparent!important;
-height: 43px;
+  border-color: transparent !important;
+  height: 43px;
 }
+
 @media (max-width:620px) {
   .theme-2-card {
     padding: 8px !important;
     padding-bottom: 0px !important;
   }
-  [store-style="2"] .coupon a.h3{
-  font-size: 14px;
-}
-[store-style="2"] .coupon .my-auto.px-2.px-md-4.col-8{
-  margin-block: 0px!important;
-}
+
+  [store-style="2"] .coupon a.h3 {
+    font-size: 14px;
+  }
+
+  [store-style="2"] .coupon .my-auto.px-2.px-md-4.col-8 {
+    margin-block: 0px !important;
+  }
+
   .theme-2-card .button-secondary {
 
     font-size: 11px !important;

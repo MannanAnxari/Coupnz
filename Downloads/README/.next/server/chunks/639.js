@@ -66,9 +66,7 @@ const Couponcard = ({ data , item , img  })=>{
                     ]
                 })
             ]
-        }) : // <h2 className='head1 pt-5 '>Today's Most Popular Deals</h2>
-        // ${item.type === 'topdeal' ? 'top-deal' : ''}
-        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             class: `card position-relative border-0 h-100  `,
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

@@ -349,27 +349,13 @@ const Footer2 = ({ season , country , data  })=>{
 
 
 const Header1 = ({ data , category , season , coupons , country  })=>{
-    const [err, setError] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
-    // const category = [
-    //     'Apparel and Accessories', 'Arts and Entertainment ', 'Business'
-    // ]
-    // const coupons = [
-    //     'Coupon Code ', 'Free Gift', 'Discount'
-    // ]
-    // const season = [
-    //     'Back to school ', 'Cyber Monday', 'Discount'
-    // ]
-    // const country = [
-    //     'United State ', 'United Kingdom', 'Canada'
-    // ]
-    // console.log(data); 
     const [searchQuery, setSearchQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]);
     const [isActive, setIsActive] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
-    const [query, setQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const [query, setQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)("");
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const handleSearch = (e)=>{
         setQuery(e);
-        if (e.length > 1) {
+        if (query.length >= 1) {
             setIsActive(true);
             setIsLoading(true);
             fetch(`${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__.APP_URL}api/store?key=${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_7__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
@@ -570,6 +556,12 @@ const Header1 = ({ data , category , season , coupons , country  })=>{
                                         }) : searchQuery.length ? searchQuery.map((item)=>{
                                             return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 class: "list-group",
+                                                onClick: ()=>{
+                                                    setQuery("");
+                                                    setIsLoading(false);
+                                                    setIsActive(false);
+                                                    setSearchQuery([]);
+                                                },
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                                     href: `/store/${item.slug}`,
                                                     class: "list-group-item list-group-item-action rounded-0 ",
@@ -624,14 +616,13 @@ const Header1 = ({ data , category , season , coupons , country  })=>{
 
 
 const Header2 = ({ data , category , season , coupons , country  })=>{
-    const [err, setError] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const [searchQuery, setSearchQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]);
     const [isActive, setIsActive] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
-    const [query, setQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const [query, setQuery] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)("");
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const handleSearch = (e)=>{
         setQuery(e);
-        if (e.length > 1) {
+        if (query.length >= 1) {
             setIsActive(true);
             setIsLoading(true);
             fetch(`${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__.APP_URL}api/store?key=${_public_settings_there_is_nothing_holding_me_back_config__WEBPACK_IMPORTED_MODULE_5__.APP_KEY}&search=${e}`).then((res)=>res.json()).then((results)=>{
@@ -695,11 +686,12 @@ const Header2 = ({ data , category , season , coupons , country  })=>{
                                 role: "search",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                        className: "form-control  rounded-1",
+                                        className: "form-control rounded-1",
                                         type: "search",
                                         placeholder: "Search 5000+ Brands Coupons & Promo Codes",
                                         "aria-label": "Search",
-                                        onChange: (e)=>handleSearch(e.target.value)
+                                        onChange: (e)=>handleSearch(e.target.value),
+                                        value: query
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         class: "w-75 top-100 pl-0 z-2 position-absolute header-search z-2",
@@ -712,6 +704,12 @@ const Header2 = ({ data , category , season , coupons , country  })=>{
                                         }) : searchQuery.length ? searchQuery.map((item)=>{
                                             return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 class: "list-group",
+                                                onClick: ()=>{
+                                                    setQuery("");
+                                                    setIsLoading(false);
+                                                    setIsActive(false);
+                                                    setSearchQuery([]);
+                                                },
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                                     href: `/store/${item.slug}`,
                                                     class: "list-group-item list-group-item-action rounded-0",
