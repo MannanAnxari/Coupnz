@@ -71,11 +71,11 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle, padd }) => {
                         <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${coupon.store_slug}/${coupon?.id}`) }} className={`p-2 fw-bold d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                             {!coupon?.code ? '>' : '>'}
                         </Link>
-                        <p className='d-md-block d-none x-small text-center'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
+                        {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
                     </div>
                 </div>
                 :
-                <div className={`bg-white my-2 h-100 p-3 coupon ${isSingle && 'theme-2-card'}`}>
+                <div className={`bg-white my-2 h-100 ${isSingle ? 'p-1 px-3' : 'p-3'} coupon ${isSingle && 'theme-2-card'}`}>
                     <div className="row">
                         <div className={`${isSingle ? 'col-md-2 col-3' : 'col-2'} my-auto`}>
 
@@ -85,7 +85,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle, padd }) => {
                         <div className={`my-auto px-2 px-md-4 ${isSingle ? 'col-sm-7 col-9 mt-0' : 'col-8'}`}>
                             <Link href="#" className={`h3 text-black`}>{coupon?.title}</Link>
                             <p className={`tr-2 d-md-block lh-1 ${!isSingle && 'd-none'} fs-6`} dangerouslySetInnerHTML={{ __html: coupon.description }}></p>
-                            {coupon.featured === 'on' ? <p class="expiredate m-0   text-primary"><i class="fas fa-star  text-primary" aria-hidden="true"></i> New Coupon</p> : ''}
+                            {coupon.featured === 'on' ? <p class="expiredate m-0 text-primary"><i class="fas fa-star text-primary" aria-hidden="true"></i> New Coupon</p> : ''}
 
                             <div className='d-none justify-content-between mb-0'>
 
@@ -125,10 +125,10 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle, padd }) => {
                                     </Link>
                                     <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center  my-auto">{coupon.code}</div>
                                 </div>
-                                <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
+                                {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
 
                             </div>
-                            
+
                             :
 
                             <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
@@ -139,11 +139,11 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle, padd }) => {
                                 <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${coupon.store_slug}/${coupon?.id}`) }} className={`p-2  d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                                     {!coupon?.code ? 'Show Deal' : 'Show Deal'}
                                 </Link>
-                                <p className='d-md-block d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
+                                {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
                             </div>
                         }
                     </div>
-                    <div className={`border-top w-100 d-flex justify-content-between ${padd ? 'pt-3' : 'py-2'}`}>
+                    <div className={`border-top w-100 d-flex justify-content-between ${padd ? 'pt-1' : 'py-2'}`}>
                         <div className='col-6 text-center ms-2 my-auto'>
                             <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
                                 ` ${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`

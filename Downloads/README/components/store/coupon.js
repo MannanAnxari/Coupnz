@@ -73,11 +73,11 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                         <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`p-2 fw-bold d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                             {!coupon?.code ? '>' : '>'}
                         </Link>
-                        <p className='d-md-block d-none x-small text-center'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'}</p>
+                        {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
                     </div>
                 </div >
                 :
-                <div className={`bg-white  my-2 h-100 p-3 coupon pb-0 ${isSingle && 'theme-2-card'}`}>
+                <div className={`bg-white my-2 h-100 ${isSingle ? 'p-1 px-3' : 'p-3'} coupon ${isSingle && 'theme-2-card'}`}>
                     <div className="row">
                         <div className={`${isSingle ? 'col-md-2 col-3' : 'col-2'} my-auto`}>
 
@@ -90,7 +90,6 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                             {coupon.featured === 'on' ? <p class="expiredate m-0   text-primary"><i class="fas fa-star  text-primary" aria-hidden="true"></i> New Coupon</p> : ''}
 
                             <div className='d-none justify-content-between mb-0'>
-
                                 {!is_ico
                                     &&
                                     <div className=" coupon-social d-none">
@@ -116,7 +115,6 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                     </div>
                                 }
                             </div>
-
                         </div>
                         {coupon?.code ?
                             <div className={`${isSingle ? 'col-sm-3 col-12' : 'card-footer bg-transparent col-3'}`}>
@@ -127,7 +125,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                     </Link>
                                     <div class="show-code-2-code overflow-hidden justify-content-end fw-bold d-flex align-items-center my-auto">{coupon.code}</div>
                                 </div>
-                                <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
+                                {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
                             </div>
                             :
                             <div className={`text-end m-auto my-auto fw-bold ${isSingle ? 'col-sm-3 col-12' : 'col-3'}`}>
@@ -139,7 +137,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                                 <Link href={`${coupon?.url || ''}`} onClick={() => { window.open(`/store/${slug?.query?.slug}/${coupon?.id}`) }} className={`p-2  d-md-none d-block button button-${!coupon?.code ? 'secondary' : 'primary'}`}  >
                                     {!coupon?.code ? 'Show Deal' : 'Show Deal'}
                                 </Link>
-                                <p className='d-md-block d-none x-small text-center pt-3'>Update: {coupon.update_date ? `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}` : 'Expire soon...'} </p>
+                                {coupon.update_date ? <p className='d-md-block fw-bold d-none x-small text-center pt-3'>Update:  {`${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</p> : ''}
                             </div>
                         }
                     </div>
