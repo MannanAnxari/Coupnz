@@ -77,7 +77,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                     </div>
                 </div >
                 :
-                <div className={`bg-white my-2 h-100 ${isSingle ? 'p-1 px-3' : 'p-3'} coupon ${isSingle && 'theme-2-card'}`}>
+                <div className={`bg-white my-2 h-100 ${padd ? 'py-2 px-3' : 'p-3 pb-0'} coupon ${isSingle && 'theme-2-card'}`}>
                     <div className="row">
                         <div className={`${isSingle ? 'col-md-2 col-3' : 'col-2'} my-auto`}>
 
@@ -141,7 +141,7 @@ const horizentalcoupon = ({ data, coupon, is_ico, img, isSingle,padd }) => {
                             </div>
                         }
                     </div>
-                    <div className={`border-top w-100 d-flex justify-content-between ${padd ? 'pt-3' : 'py-2'}`}>
+                    <div className={`border-top w-100 d-flex justify-content-between ${padd ? 'pt-2' : 'py-2'}`}>
                         <div className='col-6 text-center ms-2 my-auto'>
                             <p className='x-small mb-0 expiredate'>Expires:  {coupon.expire_date ?
                                 `${monthNames[edate.getMonth()].slice(0, 3)} ${edate.getDate()}, ${edate.getFullYear()}`

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[690],{8640:function(n,t,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Storedetail",function(){return e(3374)}])},3374:function(n,t,e){"use strict";e.r(t);var u=e(5893);e(7294);let i=()=>(0,u.jsx)("div",{children:"Storedetail"});t.default=i}},function(n){n.O(0,[774,888,179],function(){return n(n.s=8640)}),_N_E=n.O()}]);

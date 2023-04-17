@@ -79,7 +79,7 @@ const modal = ({ img, data, popup, store }) => {
 
                                             <small className={`d-flex align-items-center justify-content-center px-3 mb-0 ${popup?.code && 'bg-code h3'}`}>{popup?.code || 'No Coupon Needed'}</small>
 
-                                            <Link href={`${popup?.url}`} className='d-flex align-items-center justify-content-center code-btn px-3 button button-secondary px-1 mt-0' onClick={() => navigator.clipboard.writeText(`${popup?.code}`)}>{popup?.code ? `Copy` : `Go To the ${store}`}</Link>
+                                            <Link href={`${popup?.code ? '#' : popup?.url}`} className='d-flex align-items-center justify-content-center code-btn px-3 button button-secondary px-1 mt-0' onClick={() => navigator.clipboard.writeText(`${popup?.code}`)}>{popup?.code ? `Copy` : `Go To the ${store}`}</Link>
                                         </div>
                                     </div>
                                 </div>
